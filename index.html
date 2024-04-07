@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+            margin: 0;
+            font-size: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+            height: 64px;
+            width:25%;
+        }
+        /* 홀수 번째 행의 배경색 */
+        tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        /* 짝수 번째 행의 배경색 */
+        tr:nth-child(even) {
+            background-color: #e6e6e6;
+        }
+        thead th {
+            position: sticky;
+            top: 0; /* 화면 상단에 붙어있도록 설정 */
+            background: gray;
+            z-index: 523;
+            font-size: 32px;
+        }   
+
+        /*그잘알*/
+        .rowspan {
+            background: #f9edd3;
+        }
+
+        .split-column {
+            width: 12.5%;
+        }
+        .time-column{
+            width: 6.25%;
+        }
+        .empty{
+            background: white;
+            border:none;
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+        <thead>
+            <tr>
+                <th class="time-column">시간</th>
+                <th colspan="2">금</th>
+                <th colspan="2">토</th>
+                <th colspan="2">일</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- ... -->
+            <tr>
+                <td class="time-column">08:30<br>~09:00</td>
+                <td rowspan="6" colspan="2" class="empty"></td> <!-- 금 -->
+                <td rowspan="5" colspan="2" class="empty"></td> <!-- 토 -->
+                <td rowspan="2" class="split-column rowspan">
+                    08:30<br>
+                    니치아사3종<br>
+                    중포올
+                </td>
+                <td class="split-column">
+                    08:30<br>
+                    신카리온 체인지 더 월드<br>
+                    중포올
+                </td>
+
+            </tr>
+            <tr>
+                <td class="time-column">09:30<br>~10:00</td>
+                <td class="split-column">
+                    09:30<br>
+                    원피스<br>
+                    세븐투
+                </td>
+            </tr>
+            <tr>
+                <td class="time-column">10:00<br>~10:30</td>
+                <td colspan="2" class="split-column">
+                    10:00<br>
+                    비밀의 아이프리<br>
+                    중포올
+                </td>
+            </tr>
+            <tr>
+                <td class="time-column">16:30<br>~17:00</td>
+                <td colspan="2">
+                    16:30<br>
+                    전대대실격<br>
+                    세븐투
+                </td>
+            </tr>
+            <tr>
+                <td class="time-column">17:00<br>~17:30</td>
+                <td colspan="2">
+                    17:00<br>
+                    울려라! 유포니엄 3기<br>
+                    세븐투
+                </td>
+            </tr>
+            <tr>
+                <td class="time-column">17:30<br>~18:00</td>
+                <td colspan="2">
+                    17:30<br>
+                    나히아 6기<br>
+                    세븐투
+                </td>
+                <td rowspan="3" colspan="2" class="empty"></td>
+            </tr>
+            <!--6시-->
+            <tr>
+                <td class="time-column">18:25<br>~18:55</td>
+                <td colspan="2">
+                    18:25<br>
+                    베이블레이드X<br>
+                    팡머
+                </td>
+                <td rowspan="2" colspan="2" class="empty"></td>
+
+            </tr>
+            <tr>
+                <td class="time-column">18:55<br>~19:25</td>
+                <td colspan="2">
+                    18:55<Br>
+                    포켓몬스터 (2023)<br>
+                    팡머
+                </td>
+            </tr>
+            <tr>
+                <td class="time-column">22:00<br>~22:30</td>
+                <td rowspan="1" colspan="2" class="empty"></td>
+                <td colspan="2">
+                    22:00<br>
+                    원룸, 햇볕 보통, 천사 딸림<br>
+                    세븐투
+                </td>
+                <td colspan="2">
+                    22:00<br>
+                    사신 도련님과 검은 메이드 3기<br>
+                    나시아리
+                </td>
+            </tr>
+            <tr>
+                <td class="time-column">22:30<br>~23:00</td>
+                <td colspan="2">
+                    22:30<br>
+                    아스트로 노트<br>
+                    세븐투
+                </td>
+                <td rowspan="1" colspan="2" class="empty"></td>
+                <td rowspan="2" colspan="2" class="empty"></td>
+            </tr>
+            <tr>
+                <td class="time-column">23:00<br>~23:15</td>
+                <td rowspan="2" colspan="2">
+                    23:00<br>
+                    전생슬 3기<br>
+                    세븐투
+                </td>
+                <td rowspan="2" colspan="2">
+                    23:00<br>
+                    괴수8호<br>
+                    세븐투
+                </td>
+            </tr>
+            <tr>
+                <td class="time-column">23:15<br>~23:30</td>
+                <td rowspan="2" class="split-column">
+                    23:15<br>
+                    귀멸의 칼날 합동 훈련편<br>
+                    중계의 거인
+                </td>
+                <td class="split-column empty"></td>
+            </tr>
+            <tr>
+                <td class="time-column">23:30<br>~23:45</td>
+                <td rowspan="2" colspan="2" class="split-column">
+                    23:30<br>
+                    마법과 고교의 열등생<br>
+                    기미요
+                </td>
+                <td rowspan="2" colspan="1" class="split-column">
+                    23:30<br>
+                    흑집사 기숙학교편<br>
+                    세븐투
+                </td>
+                
+                <td rowspan="1" colspan="1" class="split-column empty"></td>
+                <td rowspan="2" class="split-column">
+                    23:30<br>
+                    할아버지 할머니 회춘하다<br>
+                    기미요
+                </td>
+
+            </tr>
+            <tr>
+                <td class="time-column">23:45<br>~24:00</td>
+                <td rowspan="2" colspan="1" class="split-column">
+                    23:45<br>
+                    까마귀는 주인을 고르지 않는다<br>
+                    기미요
+                </td>
+                <td rowspan="2" colspan="1" class="split-column">
+                    23:45<br>
+                    블루 아카이브 TVA<br>
+                    중포올
+                </td>
+            </tr>
+            <tr>
+                <td class="time-column">24:00<br>~24:15</td>
+                <td rowspan="2" colspan="2" class="empty"></td>
+                <td rowspan="1" colspan="1" class="split-column empty"></td>
+                <td rowspan="2" colspan="1" class="split-column">
+                    24:00<br>
+                    무직전생 2기<br>
+                    기미요
+                </td>
+                <!--일요일은끝-->
+            </tr>
+            <tr>
+                <td class="time-column">24:15<br>~24:30</td>
+                <td rowspan="1" colspan="2" class="empty"></td>
+                <td rowspan="1" colspan="1" class="split-column empty"></td>
+            </tr>
+            <tr>
+                <td class="time-column">24:30<br>~24:55</td>
+                <td rowspan="2" colspan="2">
+                    24:30<br>
+                    걸즈 밴드 크라이<br>
+                    kirafan
+                </td>
+                <td rowspan="1" colspan="2" class="empty"></td>
+                <td rowspan="5" colspan="2" class="empty"></td>
+
+            </tr>
+            <tr>
+                <td class="time-column">24:55<br>~25:00</td>
+                <td rowspan="2" colspan="1" class="split-column">
+                    24:55<br>
+                    더 페이블<br>
+                    기미요
+                </td>
+                <td rowspan="1" colspan="1" class="split-column empty"></td>
+            </tr>
+            <tr>
+                <td class="time-column">25:00<br>~25:28</td>
+                <td rowspan="1" colspan="2" class=" empty"></td>
+                <td rowspan="1" colspan="1" class="split-column">
+                    25:00<br>
+                    밤의 해파리는 헤엄칠 수 없어<br>
+                    kirafan
+                </td>
+            </tr>
+            <tr>
+                <td class="time-column">25:28<br>~25:53</td>
+                <td rowspan="2" colspan="1" class="split-column">
+                    25:28<br>
+                    아이돌 마스터 샤이니 컬러즈<br>
+                    중포올
+                </td>
+                <td rowspan="1" colspan="1" class="split-column empty"></td>
+
+                <td rowspan="1" colspan="2" class="">
+                    25:30<br>
+                    속삭이듯 사랑을 노래하다<br>
+                    kirafan
+                </td>
+            </tr>
+            <tr>
+                <td class="time-column">25:53<br>~26:00</td>
+                <td rowspan="2" colspan="1" class="split-column">
+                    25:53<br>
+                    HIGHSPEED Étoile<br>
+                    중포올
+                </td>
+            </tr>
+            <tr>
+                <td class="time-column">26:00<br>~26:23</td>
+            </tr>
+            <!-- ... -->
+        </tbody>
+    </table>
+</body>
+</html>
